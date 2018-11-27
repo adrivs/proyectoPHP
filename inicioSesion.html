@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formInicioSesion">
+        <h3>Clover</h3>
+        <br />
+        <form action="validarSesion.php" method="POST">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Email" name="emailGuia">
+        <br/>
+        <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" placeholder="Contraseña" name="passGuia">
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

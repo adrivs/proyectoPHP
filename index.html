@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="archivos/styles.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clover</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"> Clover</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="./archivos/inicioSesion.html">Iniciar sesión <span class="sr-only">(current)</span></a>
+
+                </div>
+            </div>
+        </nav>
+        <div class="first-block">
+            <div class="text-block">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p><strong>¿Estás buscando un guía que te enseñe lo que quieres? <br />
+                                Registrate y no tardes en encontrar a tu guía.
+                            </strong>
+                        </p>
+                        <button class="btn btn-sign">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FIN PRIMER BLOQUE-->
+
+        <!--PRINCIPIO SEGUNDO BLOQUE-->
+        <div class="second-block">
+            <h2>¿Cómo ser guía?</h2>
+            <!--PRIMERA FILA-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="second-x-block">
+                        <h3>1. Regístrate </h3>
+                        <p>Rellena el formulario </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="second-x-block">
+                        <h3>2. Crea tu recorrido </h3>
+                        <p>Haz un recorrido a tu gusto.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PRIMERA FILA-->
+
+            <!--SEGUNDA FILA-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="second-x-block">
+                        <h3>3. Capta a gente </h3>
+                        <p>La gente interesada se podrá apuntar a tu recorrido </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="second-x-block">
+                        <h3>4. ¡Ya eres guía! </h3>
+                        <p>Comienza a ofrecer tu servicio </p>
+                    </div>
+                </div>
+            </div>
+            <!--FIN SEGUNDA FILA-->
+
+            <!--SEGUNDA FILA-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="second-x-block">
+                        <form action="./archivos/formGuia.php">
+                            <button type="submit" class="btn btn-primary"> Regístrate como guía </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--FIN SEGUNDA FILA-->
+        </div>
+        <!--FIN SEGUNDO BLOQUE-->
+
+        <div class="cartas">
+            <div class="tituloCartas">
+                <h2>Recorridos más populares</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Ardales - Carratraca</h5>
+                          <p class="card-text">Recorrido rural entre estos dos pueblos de la comarca del Guadalteba.</p>
+                          <form action="" method="POST">
+                                <input type="hidden" name="genteApuntada" value="" id="gente">
+                                <button type="submit" class="btn btn-primary" id="botonApuntarse" onclick="apuntarse()">Apuntarse</button>
+                            </form>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Frigiliana - Nerja</h5>
+                          <p class="card-text">Visita breve en estos dos bellos pueblos cercanos a la Costa del Sol.</p>
+                          <form action="" method="POST">
+                              <input type="hidden" name="genteDos" value="">
+                              <button type="submit" class="btn btn-danger">Completo</button>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Catedral de Málaga</h5>
+                          <p class="card-text">Visita guiada por el centro de Málaga y el interior de la Catedral de Málaga.</p>
+                          <a href="#" class="btn btn-danger">Completo</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacto">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="textoContacto">
+                        <h2>Contacta con <br/> nosotros</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <form>
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="email" class="form-control" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="email" class="form-control" placeholder="Nombre">
+                          </div>
+                        <div class="form-group">
+                          <label>Mensaje</label>
+                          <textarea class="form-control"rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success">Enviar</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <span>Hecho por Adrián Villalba Sánchez</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script>
+
+    var a = 0;
+    function apuntarse() {
+        a += 1;
+        document.getElementById('gente').value = a;
+        console.log("click");
+    }
+
+</script>
+</html>
