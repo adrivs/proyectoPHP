@@ -25,6 +25,8 @@ $lnk->set_charset("utf8") ;
 
         $sql = "UPDATE recorrido SET comienzo = '$comienzo', fin = '$fin', tiempo = '$tiempo', longitud = '$longitud', zona = '$zona', dia = '$dia' WHERE idRecorrido = '$idRecorrido'";
         if($lnk->query($sql));
+
+        header("location:indexGuia.php");
         
 
 ?>
